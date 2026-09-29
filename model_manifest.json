@@ -1,0 +1,18 @@
+{
+    "project": "V5 RWA Investor Eligibility",
+    "trained_split": "80/20",
+    "components": [
+        "Structured ANN",
+        "Tiny ViT",
+        "ANN-ViT fusion classifier",
+        "Fitted preprocessing",
+        "Generated XAI and evaluation artifacts"
+    ],
+    "model_sources": {
+        "ann": "obj80['ann']",
+        "vit": "obj80['vit']",
+        "fusion": "obj80['fusion']",
+        "preprocessor": "obj80['prep']"
+    },
+    "vit_loading_note": "Define TinyViT exactly as in the notebook, instantiate it, then load model_state_dict."
+}
