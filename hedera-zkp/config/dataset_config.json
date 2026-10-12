@@ -1,0 +1,10 @@
+{
+  "dataset_path": "C:\\Users\\VARSHINI\\OneDrive\\Documents\\Desktop\\RWA\\synthetic_investor_dataset.csv",
+  "target_column": "eligibility_label",
+  "identifier_column": "investor_id",
+  "dataset_type": "synthetic",
+  "chain": "Hedera Testnet",
+  "token_standard": "ERC-3643",
+  "status": "prototype",
+  "note": "Do not use real Aadhaar, PAN, biometric, or personally identifying data."
+}

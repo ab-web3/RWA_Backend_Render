@@ -1,0 +1,29 @@
+{
+  "claim_name": "v5_investor_eligibility",
+  "public_outputs": [
+    "eligibility_claim",
+    "issuer_commitment",
+    "credential_expiry",
+    "token_or_property_id",
+    "nullifier"
+  ],
+  "private_witness_candidates": [
+    "investor_id",
+    "age",
+    "aadhaar_verified",
+    "pan_verified",
+    "aadhaar_pan_name_match_score",
+    "income_verified",
+    "verified_annual_income",
+    "face_match_score",
+    "liveness_score",
+    "spoof_detected",
+    "location_consistent",
+    "document_tampered",
+    "risk_score",
+    "eligibility_label"
+  ],
+  "prototype_rule": "eligibility_label == 1",
+  "final_rule_status": "PENDING_TARGET_CONSTRUCTION_AUDIT",
+  "warning": "A proof of the supplied label is only an integration prototype. The final circuit must use a documented eligibility rule or issuer-signed credential."
+}

@@ -1,0 +1,36 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
+__pycache__/
+.pytest_cache/
+
+# Generated proving-key/build artifacts: bulky and regenerable from the
+# scripts in package.json plus the dataset in config/dataset_config.json.
+# Do not commit proving keys or private witnesses (see circuits/README.md).
+# The small evidence/result files that document what was actually run and
+# deployed are kept.
+artifacts/*
+!artifacts/.gitkeep
+
+!artifacts/deployment/
+artifacts/deployment/*
+!artifacts/deployment/*.json
+
+!artifacts/contracts_compiled/
+artifacts/contracts_compiled/*
+!artifacts/contracts_compiled/*.json
+
+!artifacts/circuit/
+artifacts/circuit/*
+!artifacts/circuit/V5EligibilityVerifier.generated.sol
+!artifacts/circuit/verification_key.json
+
+!artifacts/batch/
+artifacts/batch/*
+!artifacts/batch/batch_summary.json
+!artifacts/batch/manifest.json
+

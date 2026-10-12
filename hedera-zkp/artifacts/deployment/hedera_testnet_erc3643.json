@@ -1,0 +1,12 @@
+{
+  "network": "hedera-testnet",
+  "rpcUrl": "https://testnet.hashio.io/api",
+  "deployer": "0xe469c589aDA55a22Ed76A31039C5661EC8817CB7",
+  "identityRegistry": "0x654144ba97D32b06B37A2E5db540C4fbb788f9C2",
+  "compliance": "0x0829a3bd4C8a9EEC1CEA7731CC8EDa20242E39ec",
+  "verifier": "0xcAE02778b1b935F226fc3526a07eC4Bfb0A5d909",
+  "zkpRegistry": "0x4447c6cea10fcdC88b3B61b05657B7061A7AD6C7",
+  "token": "0x1e3D8daAe4164233c9BAe250A57D4CdA9cf90E6A",
+  "deployedAt": "2026-09-23T06:41:35.073Z",
+  "tokenRedeployedAt": "2026-09-23T09:19:15.960Z"
+}

@@ -1,0 +1,10 @@
+{
+  "ranAt": "2026-09-23T06:42:26.410Z",
+  "investor": "0xe469c589aDA55a22Ed76A31039C5661EC8817CB7",
+  "verifiedBefore": false,
+  "verifiedAfter": true,
+  "proofUsed": "row_00050_INV000050.json",
+  "proofTx": "0xfc0a7ad58f01cdb131390b5302fa393cd836fe108dd7aa9a2639471fd1fa0e64",
+  "mintTx": "0xad67a3cee42ca78560ecb3419d6687f6fbac2f61edf261c3926f0a91dba6becc",
+  "finalBalance": "100"
+}

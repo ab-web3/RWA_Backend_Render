@@ -1,0 +1,215 @@
+{
+  "contractName": "Compliance",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "identityRegistry_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "TokenBound",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "TokenUnbound",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "bindToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "canTransfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "created",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "destroyed",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTokenBound",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "identityRegistry",
+      "outputs": [
+        {
+          "internalType": "contract IIdentityRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "isTokenBound",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferred",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "unbindToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b506040516104f43803806104f4833981016040819052602b91605c565b5f8054336001600160a01b031991821617909155600280549091166001600160a01b03929092169190911790556087565b5f60208284031215606b575f5ffd5b81516001600160a01b03811681146080575f5ffd5b9392505050565b610460806100945f395ff3fe608060405234801561000f575f5ffd5b506004361061009b575f3560e01c80638baf29b4116100635780638baf29b41461011a5780638d2ea772146100f75780638da5cb5b1461012d578063993e8b951461013f578063e46638e614610171575f5ffd5b8063134e18f41461009f5780633ff5aa02146100cf57806340db3b50146100e45780635f8dead3146100f75780636a3edf2814610109575b5f5ffd5b6002546100b2906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100e26100dd366004610389565b610184565b005b6100e26100f2366004610389565b610223565b6100e26101053660046103a9565b5050565b6001546001600160a01b03166100b2565b6100e26101283660046103d1565b505050565b5f546100b2906001600160a01b031681565b61016161014d366004610389565b6001546001600160a01b0390811691161490565b60405190151581526020016100c6565b61016161017f3660046103d1565b6102fa565b5f546001600160a01b031633146101ce5760405162461bcd60e51b81526020600482015260096024820152683737ba1037bbb732b960b91b60448201526064015b60405180910390fd5b600180546001600160a01b0319166001600160a01b0383169081179091556040519081527f2de35142b19ed5a07796cf30791959c592018f70b1d2d7c460eef8ffe713692b906020015b60405180910390a150565b5f546001600160a01b031633146102685760405162461bcd60e51b81526020600482015260096024820152683737ba1037bbb732b960b91b60448201526064016101c5565b6001546001600160a01b038281169116146102b15760405162461bcd60e51b81526020600482015260096024820152681b9bdd08189bdd5b9960ba1b60448201526064016101c5565b600180546001600160a01b03191690556040516001600160a01b03821681527f28a4ca7134a3b3f9aff286e79ad3daadb4a06d1b43d037a3a98bdc074edd9b7a90602001610218565b60025460405163b9209e3360e01b81526001600160a01b0384811660048301525f92169063b9209e3390602401602060405180830381865afa158015610342573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610366919061040b565b949350505050565b80356001600160a01b0381168114610384575f5ffd5b919050565b5f60208284031215610399575f5ffd5b6103a28261036e565b9392505050565b5f5f604083850312156103ba575f5ffd5b6103c38361036e565b946020939093013593505050565b5f5f5f606084860312156103e3575f5ffd5b6103ec8461036e565b92506103fa6020850161036e565b929592945050506040919091013590565b5f6020828403121561041b575f5ffd5b815180151581146103a2575f5ffdfea2646970667358221220d8c7280cf45b1a746c97ff53c66eb1fd03ce7e50c8d71112cedc2f7ed1f4515664736f6c63430008250033"
+}
