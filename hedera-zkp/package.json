@@ -1,0 +1,24 @@
+{
+  "name": "v5-zkp-erc3643-hedera",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile:circuit": "circom circuits/v5_eligibility.circom --r1cs --wasm --sym -l node_modules",
+    "compile:contracts": "node scripts/compile_contracts.js",
+    "deploy:hedera": "node scripts/deploy_hedera.js",
+    "submit:hedera": "node scripts/submit_proof_hedera.js",
+    "benchmark:hedera": "node scripts/onchain_benchmark_hedera.js",
+    "deploy:erc3643": "node scripts/deploy_erc3643_hedera.js",
+    "demo:erc3643": "node scripts/demo_erc3643_gate_hedera.js",
+    "report:gas": "node scripts/gas_report.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.5"
+  },
+  "devDependencies": {
+    "ethers": "^6.17.0",
+    "solc": "^0.8.37"
+  }
+}

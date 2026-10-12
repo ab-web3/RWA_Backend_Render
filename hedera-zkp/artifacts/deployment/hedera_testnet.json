@@ -1,0 +1,8 @@
+{
+  "network": "hedera-testnet",
+  "rpcUrl": "https://testnet.hashio.io/api",
+  "deployer": "0xe469c589aDA55a22Ed76A31039C5661EC8817CB7",
+  "verifier": "0x6eAac96A32352d3dA1d180870fcBa3F6C199B064",
+  "registry": "0x13cd67d3E0b6d39e26ec89AE767988B6Cb9A6485",
+  "deployedAt": "2026-09-23T05:53:09.098Z"
+}

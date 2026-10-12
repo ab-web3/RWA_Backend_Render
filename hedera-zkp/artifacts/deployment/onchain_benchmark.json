@@ -1,0 +1,304 @@
+{
+  "ranAt": "2026-09-23T07:30:04.419Z",
+  "registry": "0x13cd67d3E0b6d39e26ec89AE767988B6Cb9A6485",
+  "sampleSize": 40,
+  "totalDatasetSize": 3308,
+  "accepted": 40,
+  "skipped": 0,
+  "gas": {
+    "mean": 306132.2,
+    "median": 306131,
+    "stddev": 11.634431657799187,
+    "min": 306113,
+    "max": 306149
+  },
+  "latencyMs": {
+    "mean": 9051.8,
+    "median": 8845,
+    "stddev": 1028.9004373601947,
+    "min": 7650,
+    "max": 13064
+  },
+  "records": [
+    {
+      "file": "row_00003_INV000003.json",
+      "status": "accepted",
+      "tx": "0x9ed972bee42f05d6979de76b0f16654c2897b0718c986ef763adc5e20be7a1b1",
+      "gasUsed": 306113,
+      "latencyMs": 9895
+    },
+    {
+      "file": "row_00123_INV000123.json",
+      "status": "accepted",
+      "tx": "0xa7edc2378e636d879898666527f71776d1d2de9baa8456e460f13b46b2342f30",
+      "gasUsed": 306137,
+      "latencyMs": 8849
+    },
+    {
+      "file": "row_00261_INV000261.json",
+      "status": "accepted",
+      "tx": "0x3ecf706c446757ec1fb4ca3049a48781a20fcf723c47be4216a48035848cda85",
+      "gasUsed": 306125,
+      "latencyMs": 9635
+    },
+    {
+      "file": "row_00372_INV000372.json",
+      "status": "accepted",
+      "tx": "0x900eb68209e3cd2bc8fef27ee40f08cb4179885f882a3fc0f9e4f3cbc2b4ef09",
+      "gasUsed": 306113,
+      "latencyMs": 11837
+    },
+    {
+      "file": "row_00502_INV000502.json",
+      "status": "accepted",
+      "tx": "0x4c11a50a71c917caae928fbc2ec81dca22a7d3e5a843127c577ce17f11a9cce0",
+      "gasUsed": 306125,
+      "latencyMs": 10040
+    },
+    {
+      "file": "row_00624_INV000624.json",
+      "status": "accepted",
+      "tx": "0x0680e3a32afb2c755f94aa581426b713f2853c94cba09bed8c94d12f608e5c34",
+      "gasUsed": 306125,
+      "latencyMs": 8866
+    },
+    {
+      "file": "row_00750_INV000750.json",
+      "status": "accepted",
+      "tx": "0xef6a4aa951c8e6427299e7a5f74f58d0ca2adf389a8f1689de5afc243e95ac04",
+      "gasUsed": 306137,
+      "latencyMs": 9937
+    },
+    {
+      "file": "row_00876_INV000876.json",
+      "status": "accepted",
+      "tx": "0xa96352e33d0607d88ede05f30846d1d1516b721879b3a19a070971a57f43b0e8",
+      "gasUsed": 306137,
+      "latencyMs": 9063
+    },
+    {
+      "file": "row_00988_INV000988.json",
+      "status": "accepted",
+      "tx": "0xc3fee90cf3129bf26b1f204fe24983c820cd6924f1fb2f93e45d59ecc09880f1",
+      "gasUsed": 306137,
+      "latencyMs": 8730
+    },
+    {
+      "file": "row_01106_INV001106.json",
+      "status": "accepted",
+      "tx": "0x8426db6022840e90e647e8aa663bf562b6b451f1479634d25122a14e5dd7ac53",
+      "gasUsed": 306113,
+      "latencyMs": 8839
+    },
+    {
+      "file": "row_01238_INV001238.json",
+      "status": "accepted",
+      "tx": "0x4301c13e7fe4753c813c357c54acc5246a7df3903c16f4bc1824e3acc6e5d557",
+      "gasUsed": 306149,
+      "latencyMs": 8603
+    },
+    {
+      "file": "row_01363_INV001363.json",
+      "status": "accepted",
+      "tx": "0x7363dad0b17350c9c083c88de535a6474c4c15c90a3aa83ee64587f69dfdbd08",
+      "gasUsed": 306137,
+      "latencyMs": 8128
+    },
+    {
+      "file": "row_01490_INV001490.json",
+      "status": "accepted",
+      "tx": "0xdfdebd64db03ae2704adb8e716cc97eb9b326405ff92e55ccbb1a7e8d8229efb",
+      "gasUsed": 306149,
+      "latencyMs": 7877
+    },
+    {
+      "file": "row_01605_INV001605.json",
+      "status": "accepted",
+      "tx": "0x725a49bd56c93f7182e21bf3e10ef8bce81e082c7d74a3b83e91448ee17cf92d",
+      "gasUsed": 306125,
+      "latencyMs": 8175
+    },
+    {
+      "file": "row_01724_INV001724.json",
+      "status": "accepted",
+      "tx": "0x9e811d569dc818aed61d9faf1eb7501af14b5f9ff678d7b899e20ea64aa766a8",
+      "gasUsed": 306149,
+      "latencyMs": 7972
+    },
+    {
+      "file": "row_01854_INV001854.json",
+      "status": "accepted",
+      "tx": "0x77e96302df45db8d6ef92d64e66ad21d01a25f46216d3cb76dd1ef2782ec336a",
+      "gasUsed": 306137,
+      "latencyMs": 8246
+    },
+    {
+      "file": "row_01974_INV001974.json",
+      "status": "accepted",
+      "tx": "0xd204b48150f6a0c155763416436972b62c5a44ffb665b27ef2d0aa080f708040",
+      "gasUsed": 306137,
+      "latencyMs": 8167
+    },
+    {
+      "file": "row_02088_INV002088.json",
+      "status": "accepted",
+      "tx": "0x361d2eb07147e50be7fcd1adc6a0ddac88fdf37cbe15242a7b3bc4449bbc26c7",
+      "gasUsed": 306149,
+      "latencyMs": 8391
+    },
+    {
+      "file": "row_02216_INV002216.json",
+      "status": "accepted",
+      "tx": "0x85fd684b684262720bbd7d2687045cb08cfc6fcb2af46259e6df3cd422d4e76f",
+      "gasUsed": 306113,
+      "latencyMs": 9705
+    },
+    {
+      "file": "row_02345_INV002345.json",
+      "status": "accepted",
+      "tx": "0xb7b40bdce542c4febc16abb6351e11130db5acdc47eaee506e83d8a3152d8f10",
+      "gasUsed": 306149,
+      "latencyMs": 8559
+    },
+    {
+      "file": "row_02471_INV002471.json",
+      "status": "accepted",
+      "tx": "0x4914c289a0205585815a2fcc5662cfcc371984cb241ff48baee37acce42bdecf",
+      "gasUsed": 306113,
+      "latencyMs": 9199
+    },
+    {
+      "file": "row_02595_INV002595.json",
+      "status": "accepted",
+      "tx": "0x6cfbf46718818b42948007e247672e0b9ce815943f9c1946b096d18baeb2544c",
+      "gasUsed": 306149,
+      "latencyMs": 9242
+    },
+    {
+      "file": "row_02718_INV002718.json",
+      "status": "accepted",
+      "tx": "0x7f018f6b08e54288cd82f39e91c4778c36ee574ec5bb92894dca4c92a515efea",
+      "gasUsed": 306137,
+      "latencyMs": 8315
+    },
+    {
+      "file": "row_02849_INV002849.json",
+      "status": "accepted",
+      "tx": "0x893cf2b7720379b355767440e962669562b36b340758fe27e7174449713d2b08",
+      "gasUsed": 306149,
+      "latencyMs": 9744
+    },
+    {
+      "file": "row_02980_INV002980.json",
+      "status": "accepted",
+      "tx": "0x4168a8c0df859cd9c55eb1d4817fb0100b85b78ac02e2568769ddd516a6e0ecd",
+      "gasUsed": 306125,
+      "latencyMs": 8940
+    },
+    {
+      "file": "row_03119_INV003119.json",
+      "status": "accepted",
+      "tx": "0xff1e281cc8ceb4f8584c16000b3c4551b46d9d962c07ff5783b952e130c9a908",
+      "gasUsed": 306125,
+      "latencyMs": 9428
+    },
+    {
+      "file": "row_03252_INV003252.json",
+      "status": "accepted",
+      "tx": "0x9775ac7b672bed834331cf12dae7a108463271924dbf8220c31c5ebca2507f0c",
+      "gasUsed": 306125,
+      "latencyMs": 9330
+    },
+    {
+      "file": "row_03374_INV003374.json",
+      "status": "accepted",
+      "tx": "0xdc97caf66a862a9fd43a532eaf5cb8b49c7b72984239d4c8dcf1d5184b1cc077",
+      "gasUsed": 306149,
+      "latencyMs": 9361
+    },
+    {
+      "file": "row_03500_INV003500.json",
+      "status": "accepted",
+      "tx": "0xeb10b192f19fc6b28f0411bc4232602de03763c2117f61f463c5abbdcd643bca",
+      "gasUsed": 306125,
+      "latencyMs": 10645
+    },
+    {
+      "file": "row_03615_INV003615.json",
+      "status": "accepted",
+      "tx": "0x25072df7032a8ae6e676e5fce68a03b148a32a8fdfe5c5603c7deb6f75747296",
+      "gasUsed": 306125,
+      "latencyMs": 8841
+    },
+    {
+      "file": "row_03759_INV003759.json",
+      "status": "accepted",
+      "tx": "0xd7ab4b39f81dfdd13a0fd16863c5a06d8c95f8325a78bbb23ed38ec419c06d24",
+      "gasUsed": 306137,
+      "latencyMs": 9277
+    },
+    {
+      "file": "row_03871_INV003871.json",
+      "status": "accepted",
+      "tx": "0x094e38eb61c0baec5b9657643346f7aac601d0c44f479a0e3facd8694c3d007c",
+      "gasUsed": 306125,
+      "latencyMs": 8587
+    },
+    {
+      "file": "row_03996_INV003996.json",
+      "status": "accepted",
+      "tx": "0x5ee48ef6e9fa5c43bf6e37c7374cdf4c95bafe6d9ebae6a650a569f86b8c91ff",
+      "gasUsed": 306125,
+      "latencyMs": 8737
+    },
+    {
+      "file": "row_04114_INV004114.json",
+      "status": "accepted",
+      "tx": "0x32434c198f8d1e19dcf33b64b488205ccf72d2b104080f0851044b556634e299",
+      "gasUsed": 306149,
+      "latencyMs": 8210
+    },
+    {
+      "file": "row_04248_INV004248.json",
+      "status": "accepted",
+      "tx": "0xeaa027538f97c512bb55b307151898a186161ef3c37d01ff68341e49a80780bc",
+      "gasUsed": 306125,
+      "latencyMs": 8425
+    },
+    {
+      "file": "row_04374_INV004374.json",
+      "status": "accepted",
+      "tx": "0xef985bf3370b58c0d02bf7ce4ede60367045399a9cce3a2dc6e03c590d38f601",
+      "gasUsed": 306125,
+      "latencyMs": 8873
+    },
+    {
+      "file": "row_04502_INV004502.json",
+      "status": "accepted",
+      "tx": "0x397c9cb7dd01015d0867686343635c2eada548446f13488b738c01e46126ce50",
+      "gasUsed": 306125,
+      "latencyMs": 7650
+    },
+    {
+      "file": "row_04626_INV004626.json",
+      "status": "accepted",
+      "tx": "0x32a5dde725e2379f15aebdf873d32b9649c052233c8d93fffeb9319349b607f6",
+      "gasUsed": 306137,
+      "latencyMs": 8129
+    },
+    {
+      "file": "row_04766_INV004766.json",
+      "status": "accepted",
+      "tx": "0xa9a90d257dccfa7e82a45a643bedb4ec449edecc05daa0ea28b4b48e0dfc1fab",
+      "gasUsed": 306125,
+      "latencyMs": 8561
+    },
+    {
+      "file": "row_04885_INV004885.json",
+      "status": "accepted",
+      "tx": "0x9e0d6bbad8b82475a0709cd0e84553c2559aba62ff6ee6493982760a841ca100",
+      "gasUsed": 306137,
+      "latencyMs": 13064
+    }
+  ]
+}

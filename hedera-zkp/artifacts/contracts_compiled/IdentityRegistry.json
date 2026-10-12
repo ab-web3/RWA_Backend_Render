@@ -1,0 +1,425 @@
+{
+  "contractName": "IdentityRegistry",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "claimTopicsRegistry",
+          "type": "address"
+        }
+      ],
+      "name": "ClaimTopicsRegistrySet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "investorAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint16",
+          "name": "country",
+          "type": "uint16"
+        }
+      ],
+      "name": "CountryUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "investorAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract IIdentity",
+          "name": "identity",
+          "type": "address"
+        }
+      ],
+      "name": "IdentityRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "investorAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract IIdentity",
+          "name": "identity",
+          "type": "address"
+        }
+      ],
+      "name": "IdentityRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "identityStorage",
+          "type": "address"
+        }
+      ],
+      "name": "IdentityStorageSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract IIdentity",
+          "name": "oldIdentity",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract IIdentity",
+          "name": "newIdentity",
+          "type": "address"
+        }
+      ],
+      "name": "IdentityUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "trustedIssuersRegistry",
+          "type": "address"
+        }
+      ],
+      "name": "TrustedIssuersRegistrySet",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "agents",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_userAddresses",
+          "type": "address[]"
+        },
+        {
+          "internalType": "contract IIdentity[]",
+          "name": "_batchIdentities",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint16[]",
+          "name": "_batchCountries",
+          "type": "uint16[]"
+        }
+      ],
+      "name": "batchRegisterIdentity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "contains",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "deleteIdentity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "identity",
+      "outputs": [
+        {
+          "internalType": "contract IIdentity",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "identityStorage",
+      "outputs": [
+        {
+          "internalType": "contract IIdentityRegistryStorage",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "investorCountry",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "isVerified",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "issuersRegistry",
+      "outputs": [
+        {
+          "internalType": "contract ITrustedIssuersRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IIdentity",
+          "name": "_identity",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_country",
+          "type": "uint16"
+        }
+      ],
+      "name": "registerIdentity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "agent_",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "allowed",
+          "type": "bool"
+        }
+      ],
+      "name": "setAgent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_claimTopicsRegistry",
+          "type": "address"
+        }
+      ],
+      "name": "setClaimTopicsRegistry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_identityRegistryStorage",
+          "type": "address"
+        }
+      ],
+      "name": "setIdentityRegistryStorage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_trustedIssuersRegistry",
+          "type": "address"
+        }
+      ],
+      "name": "setTrustedIssuersRegistry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "topicsRegistry",
+      "outputs": [
+        {
+          "internalType": "contract IClaimTopicsRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_country",
+          "type": "uint16"
+        }
+      ],
+      "name": "updateCountry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IIdentity",
+          "name": "_identity",
+          "type": "address"
+        }
+      ],
+      "name": "updateIdentity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b505f80546001600160a01b0319163390811782558152600160208190526040909120805460ff19169091179055610b12806100485f395ff3fe608060405234801561000f575f5ffd5b5060043610610111575f3560e01c80638e098ca11161009e578063b9209e331161006e578063b9209e3314610278578063e744d789146102a3578063f0eb5e54146102b6578063f11abfd8146102e1578063fd66091e146102f2575f5ffd5b80638e098ca11461022e57806397d8c67614610241578063a8d29d1d14610254578063b4f3fcb714610267575f5ffd5b80635dbe47e8116100e45780635dbe47e81461017a578063653dc9f1146101b7578063670af6a9146101ca5780637e42683b146101dd5780638da5cb5b1461021c575f5ffd5b806326d941ae146101155780633b239a7f1461012a5780633b3e12f41461013d578063454a03e014610167575b5f5ffd5b61012861012336600461086c565b610314565b005b6101286101383660046108a4565b61038f565b6004546001600160a01b03165b6040516001600160a01b0390911681526020015b60405180910390f35b6101286101753660046108d7565b610427565b6101a761018836600461086c565b6001600160a01b039081165f9081526005602052604090205416151590565b604051901515815260200161015e565b6101286101c5366004610963565b6104eb565b6101286101d836600461086c565b6105c0565b6102096101eb36600461086c565b6001600160a01b03165f9081526006602052604090205461ffff1690565b60405161ffff909116815260200161015e565b5f5461014a906001600160a01b031681565b61012861023c366004610a02565b610632565b61012861024f366004610a39565b6106d5565b61012861026236600461086c565b610728565b6003546001600160a01b031661014a565b6101a761028636600461086c565b6001600160a01b03165f9081526007602052604090205460ff1690565b6101286102b136600461086c565b6107e3565b61014a6102c436600461086c565b6001600160a01b039081165f908152600560205260409020541690565b6002546001600160a01b031661014a565b6101a761030036600461086c565b60016020525f908152604090205460ff1681565b5f546001600160a01b031633146103465760405162461bcd60e51b815260040161033d90610a69565b60405180910390fd5b600280546001600160a01b0319166001600160a01b0383169081179091556040517f2fa8b95c1db7afe99e3398f3792f008135cedc1fa26b0bb2ecd2352cd166d53c905f90a250565b335f9081526001602052604090205460ff16806103b557505f546001600160a01b031633145b6103d15760405162461bcd60e51b815260040161033d90610a8c565b6001600160a01b0382165f81815260066020526040808220805461ffff191661ffff861690811790915590519092917f04ed3b726495c2dca1ff1215d9ca54e1a4030abb5e82b0f6ce55702416cee85391a35050565b335f9081526001602052604090205460ff168061044d57505f546001600160a01b031633145b6104695760405162461bcd60e51b815260040161033d90610a8c565b6001600160a01b038381165f81815260056020908152604080832080546001600160a01b031916958816958617905560068252808320805461ffff191661ffff88161790556007909152808220805460ff19166001179055517f6ae73635c50d24a45af6fbd5e016ac4bed179addbc8bf24e04ff0fcc6d33af199190a3505050565b335f9081526001602052604090205460ff168061051157505f546001600160a01b031633145b61052d5760405162461bcd60e51b815260040161033d90610a8c565b5f5b858110156105b7576105af87878381811061054c5761054c610aaf565b9050602002016020810190610561919061086c565b86868481811061057357610573610aaf565b9050602002016020810190610588919061086c565b85858581811061059a5761059a610aaf565b90506020020160208101906101759190610ac3565b60010161052f565b50505050505050565b5f546001600160a01b031633146105e95760405162461bcd60e51b815260040161033d90610a69565b600480546001600160a01b0319166001600160a01b0383169081179091556040517f7170bf15b246e880b2369cd7c67d057760d8a35149e8c64dde91efa22bcc76d0905f90a250565b335f9081526001602052604090205460ff168061065857505f546001600160a01b031633145b6106745760405162461bcd60e51b815260040161033d90610a8c565b6001600160a01b038083165f9081526005602052604080822080548585166001600160a01b031982168117909255915191909316929183917fe98082932c8056a0f514da9104e4a66bc2cbaef102ad59d90c4b24220ebf60109190a3505050565b5f546001600160a01b031633146106fe5760405162461bcd60e51b815260040161033d90610a69565b6001600160a01b03919091165f908152600160205260409020805460ff1916911515919091179055565b335f9081526001602052604090205460ff168061074e57505f546001600160a01b031633145b61076a5760405162461bcd60e51b815260040161033d90610a8c565b6001600160a01b038082165f81815260056020908152604080832080546001600160a01b0319811690915560068352818420805461ffff191690556007909252808320805460ff19169055519316928392917f59d6590e225b81befe259af056324092801080acbb7feab310eb34678871f32791a35050565b5f546001600160a01b0316331461080c5760405162461bcd60e51b815260040161033d90610a69565b600380546001600160a01b0319166001600160a01b0383169081179091556040517f1b98cb79e6f73020175fe87333f1b91ad6a881519c0afe30340c2599b2b4bde0905f90a250565b6001600160a01b0381168114610869575f5ffd5b50565b5f6020828403121561087c575f5ffd5b813561088781610855565b9392505050565b803561ffff8116811461089f575f5ffd5b919050565b5f5f604083850312156108b5575f5ffd5b82356108c081610855565b91506108ce6020840161088e565b90509250929050565b5f5f5f606084860312156108e9575f5ffd5b83356108f481610855565b9250602084013561090481610855565b91506109126040850161088e565b90509250925092565b5f5f83601f84011261092b575f5ffd5b50813567ffffffffffffffff811115610942575f5ffd5b6020830191508360208260051b850101111561095c575f5ffd5b9250929050565b5f5f5f5f5f5f60608789031215610978575f5ffd5b863567ffffffffffffffff81111561098e575f5ffd5b61099a89828a0161091b565b909750955050602087013567ffffffffffffffff8111156109b9575f5ffd5b6109c589828a0161091b565b909550935050604087013567ffffffffffffffff8111156109e4575f5ffd5b6109f089828a0161091b565b979a9699509497509295939492505050565b5f5f60408385031215610a13575f5ffd5b8235610a1e81610855565b91506020830135610a2e81610855565b809150509250929050565b5f5f60408385031215610a4a575f5ffd5b8235610a5581610855565b915060208301358015158114610a2e575f5ffd5b6020808252600990820152683737ba1037bbb732b960b91b604082015260600190565b6020808252600990820152681b9bdd081859d95b9d60ba1b604082015260600190565b634e487b7160e01b5f52603260045260245ffd5b5f60208284031215610ad3575f5ffd5b6108878261088e56fea2646970667358221220ddfd55e3f74b1a638600858432b0a69a1e4349e3a1cc5fc0fd6dfde78041f60964736f6c63430008250033"
+}

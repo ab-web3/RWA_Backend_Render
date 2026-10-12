@@ -1,0 +1,21 @@
+{
+  "ranAt": "2026-09-23T05:59:48.410Z",
+  "registry": "0x13cd67d3E0b6d39e26ec89AE767988B6Cb9A6485",
+  "results": [
+    {
+      "label": "valid_proof_different_row",
+      "result": "accepted",
+      "tx": "0x57658f2f1aaf8530693f06f5b6746c14b38cb854f44a33624f139e233d646463"
+    },
+    {
+      "label": "replayed_nullifier_row1",
+      "result": "rejected",
+      "reason": "Nullifier already used"
+    },
+    {
+      "label": "tampered_proof_row3",
+      "result": "rejected",
+      "reason": "Invalid ZK proof"
+    }
+  ]
+}

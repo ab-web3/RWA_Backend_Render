@@ -1,0 +1,46 @@
+{
+  "ranAt": "2026-09-30T06:15:03.396Z",
+  "hbarUsd": null,
+  "rows": [
+    {
+      "label": "ZK proof verify + registerIdentity (CLI demo)",
+      "tx": "0xfc0a7ad58f01cdb131390b5302fa393cd836fe108dd7aa9a2639471fd1fa0e64",
+      "gasUsed": 362188,
+      "gasPriceWei": "1090000000000",
+      "feeHbar": 0.39478492,
+      "feeUsd": null
+    },
+    {
+      "label": "RWAToken.mint after ZK verification (CLI demo)",
+      "tx": "0xad67a3cee42ca78560ecb3419d6687f6fbac2f61edf261c3926f0a91dba6becc",
+      "gasUsed": 87812,
+      "gasPriceWei": "1090000000000",
+      "feeHbar": 0.09571508,
+      "feeUsd": null
+    },
+    {
+      "label": "ZK proof verify (MetaMask, live demo)",
+      "tx": "0xdb9f49638ffc55c8be6d76605cbfbd531b917bf7432e8d82e928836b3e55f427",
+      "gasUsed": 362164,
+      "gasPriceWei": "1090000000000",
+      "feeHbar": 0.39475876,
+      "feeUsd": null
+    },
+    {
+      "label": "claimDemoTokens (MetaMask, live demo)",
+      "tx": "0xdf0fefb58c5fc76b1615c71184f299ed1c78a1587d4a2be5ee3fe31933fc6c2d",
+      "gasUsed": 107258,
+      "gasPriceWei": "1090000000000",
+      "feeHbar": 0.11691122,
+      "feeUsd": null
+    },
+    {
+      "label": "ZK proof verify (benchmark, sample 1)",
+      "tx": "0x9ed972bee42f05d6979de76b0f16654c2897b0718c986ef763adc5e20be7a1b1",
+      "gasUsed": 306113,
+      "gasPriceWei": "1090000000000",
+      "feeHbar": 0.33366317,
+      "feeUsd": null
+    }
+  ]
+}
