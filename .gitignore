@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Sensitive identity verification data
+test-data/
+demo_videos/
+results/
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.p12
+*.pfx
+*.pem.key
+
+# Local outputs
+*.log
+
+# Local CRL archives
+identity_verification/certs/*backup*.crl
+identity_verification/certs/*expired*.crl
